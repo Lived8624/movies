@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<body style="background-color: #f0f0f0; ">
+<form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+    {{ form.as_p}}
+
+        <button type="submit">Update Item</button>
+    </form>
+</body>
+
+{% endblock %}
